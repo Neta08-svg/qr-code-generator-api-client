@@ -2,6 +2,33 @@
   "name": "qrforge-mcp",
   "version": "1.0.0",
   "type": "module",
-  "private": true,
-  "dependencies": { "@modelcontextprotocol/sdk": "latest", "zod": "^3" }
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.0"
+  },
+  "description": "MCP server to generate QR codes (URL, WiFi, vCard, \u2026) as SVG/PNG.",
+  "bin": {
+    "qrforge-mcp": "server.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "server.json",
+    "README.md"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neta08-svg/qr-code-generator-api-client.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "modelcontextprotocol",
+    "qr",
+    "qrcode",
+    "svg"
+  ]
 }
